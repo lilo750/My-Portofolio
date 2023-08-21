@@ -1,0 +1,47 @@
+$text-Color: #e6dbdb;
+
+.hero {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .personalImg {
+      background-image: url(../../public/personal-img.jpg);
+      width: 400px;
+      height: 300px;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover;
+    }
+
+    .bio {
+      color: $text-Color;
+      font-size: 18px;
+    }
+
+    aside {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      span {
+        display: inline-block;
+        color: rgb(151, 151, 151);
+        rotate: 90deg;
+      }
+
+      span.space {
+      }
+
+      .logos {
+        display: inherit;
+        flex-direction: inherit;
+      }
+    }
+  }
+
+  footer {
+  }
+}
