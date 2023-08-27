@@ -1,0 +1,27 @@
+$gray-Color: #d8d0d0;
+
+.hero {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  translate: -50% -50%;
+
+  .bio {
+    color: $gray-Color;
+    font-size: 36px;
+    text-align: center;
+
+    .name {
+      color: #e1dada;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .hero {
+    .bio {
+      font-size: 28px;
+    }
+  }
+}

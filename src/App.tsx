@@ -1,12 +1,18 @@
+import HomePage from './Components/Home/HomePage';
 import Header from './Components/Home/Header';
 import HeroSection from './Components/Home/HeroSection';
-import HomePage from './Components/Home/HomePage';
+import Aside from './Components/Home/Aside';
+import Footer from './Components/Home/Footer';
+import ParticlesTs from './Components/Home/Particles/ParticlesTs';
 
 function App() {
   return (
     <HomePage>
+      <ParticlesTs />
       <Header />
       <HeroSection />
+      <Aside />
+      <Footer />
     </HomePage>
   );
 }

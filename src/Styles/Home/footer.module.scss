@@ -1,0 +1,42 @@
+$gray-text: #adb5bd;
+$light-text: #dee2e6;
+
+// #61ce70
+
+footer {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  gap: 30px;
+  bottom: 11%;
+  width: 90%;
+  padding: 0;
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    font-size: 18px;
+    color: $gray-text;
+  }
+
+  .description {
+    font-size: 5vw;
+    flex: 5;
+    font-weight: 600;
+    color: $light-text;
+  }
+}
+
+@media (max-width: 1120px) {
+  footer {
+    gap: 40px;
+    .contact {
+      font-size: 14px;
+    }
+  }
+}
+
+// Reservation

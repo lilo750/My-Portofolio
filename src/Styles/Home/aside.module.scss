@@ -1,0 +1,50 @@
+$gray-text: #adb5bd;
+
+aside {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  translate: 0 -50%;
+  color: $gray-text;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+  align-items: center;
+  width: 40px;
+  height: 80px;
+
+  .word {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    span {
+      rotate: 90deg;
+    }
+
+    span.space {
+      position: relative;
+    }
+
+    span.space::after {
+      content: '';
+      position: absolute;
+      background-color: $gray-text;
+      width: 1px;
+      height: 50px;
+      rotate: 90deg;
+      left: 60px;
+      top: -8px;
+    }
+  }
+
+  .logos {
+    display: inherit;
+    flex-direction: inherit;
+    align-items: center;
+    a {
+      img {
+      }
+    }
+  }
+}
