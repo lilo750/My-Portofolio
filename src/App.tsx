@@ -8,11 +8,11 @@ import ParticlesTs from './Components/Home/Particles/ParticlesTs';
 function App() {
   return (
     <HomePage>
-      <ParticlesTs />
+      {/* <ParticlesTs /> */}
       <Header />
       <HeroSection />
       <Aside />
-      <Footer />
+      {/* <Footer /> */}
     </HomePage>
   );
 }
