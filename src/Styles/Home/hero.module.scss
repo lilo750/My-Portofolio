@@ -8,8 +8,11 @@ $gray-Color: #d8d0d0;
 
   .bio {
     color: $gray-Color;
-    font-size: 36px;
+    font-size: 43px;
     text-align: center;
+    width: calc(100vw - 60px);
+    padding: 0 30px;
+    // max-width: 800px;
 
     .name {
       color: #e1dada;
@@ -18,10 +21,66 @@ $gray-Color: #d8d0d0;
   }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1270px) {
   .hero {
     .bio {
-      font-size: 28px;
+      font-size: 38px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .hero {
+    .bio {
+      font-size: 35px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .hero {
+    .bio {
+      font-size: 29px;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .hero {
+    .bio {
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .hero {
+    .bio {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .hero {
+    .bio {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 345px) {
+  .hero {
+    .bio {
+      font-size: 17px;
+    }
+  }
+}
+
+@media (max-width: 305px) {
+  .hero {
+    .bio {
+      font-size: 15.5px;
     }
   }
 }

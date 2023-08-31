@@ -16,7 +16,8 @@ aside {
   .word {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
+    font-size: 22px;
 
     span {
       rotate: 90deg;
@@ -30,11 +31,11 @@ aside {
       content: '';
       position: absolute;
       background-color: $gray-text;
-      width: 1px;
+      width: 1.5px;
       height: 50px;
       rotate: 90deg;
-      left: 60px;
-      top: -8px;
+      left: 100%;
+      top: -1px;
     }
   }
 
@@ -42,9 +43,21 @@ aside {
     display: inherit;
     flex-direction: inherit;
     align-items: center;
-    a {
-      img {
-      }
+
+    img {
+      width: 30px;
+      height: 30px;
+      transition: all 0.3s;
     }
+
+    img:hover {
+      opacity: 70%;
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  aside {
+    display: none;
   }
 }

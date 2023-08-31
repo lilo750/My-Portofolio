@@ -8,7 +8,7 @@ function Header() {
   const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false);
 
   const [isBiggerScreen, setIsBiggerScreen] = useState<boolean>(
-    window.matchMedia('(min-width: 841px)').matches
+    window.matchMedia('(min-width: 961px)').matches
   );
 
   useEffect(() => {
@@ -16,7 +16,7 @@ function Header() {
       setIsBiggerScreen(event.matches);
     };
 
-    const mediaQuery = window.matchMedia('(min-width: 841px)');
+    const mediaQuery = window.matchMedia('(min-width: 961px)');
     mediaQuery.addListener(handleResize);
 
     return () => {

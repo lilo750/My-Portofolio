@@ -1,15 +1,13 @@
 $gray-text: #adb5bd;
 $light-text: #dee2e6;
 
-// #61ce70
-
 footer {
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  gap: 30px;
+  gap: 20px;
   bottom: 11%;
   width: 90%;
   padding: 0;
@@ -18,8 +16,9 @@ footer {
     display: flex;
     flex-direction: column;
     flex: 2;
-    font-size: 18px;
+    font-size: 21px;
     color: $gray-text;
+    padding-left: 32px;
   }
 
   .description {
@@ -39,4 +38,24 @@ footer {
   }
 }
 
-// Reservation
+@media (max-width: 945px) {
+  footer {
+    flex-direction: column-reverse;
+    gap: 40px;
+
+    .description {
+      font-size: 7vw;
+    }
+    .contact {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 315px) {
+  footer {
+    .contact {
+      font-size: 14px;
+    }
+  }
+}

@@ -12,10 +12,10 @@ export default function Aside() {
         <span className={style.space}>Me</span>
       </div>
       <div className={style.logos}>
-        <a href='https://github.com'>
+        <a href='https://github.com/lilo750'>
           <img src={github} alt='github logo' />
         </a>
-        <a href='https://linkedin.com'>
+        <a href='https://www.linkedin.com/in/khaled-mohammed-6503a9219/'>
           <img src={linkedIn} alt='linked logo' />
         </a>
         <a href='https://discord.com'>
