@@ -1,4 +1,4 @@
-import style from '../../Styles/Home/footer.module.scss';
+import style from './footer.module.scss';
 import TypedComponent from '../../Utilitez/TypedAnimation/Typed';
 
 export default function Footer() {

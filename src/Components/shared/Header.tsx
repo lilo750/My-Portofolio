@@ -1,7 +1,7 @@
 import Navbar from './Navbar';
 import HamburgIcon from '../../../public/Icons/menu.svg';
 import closeMenuIcon from '../../../public/Icons/closeMenu.svg';
-import style from '../../Styles/Home/header.module.scss';
+import style from './header.module.scss';
 import { useState, useEffect } from 'react';
 
 function Header() {

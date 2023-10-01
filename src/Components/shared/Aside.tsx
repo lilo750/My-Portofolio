@@ -2,7 +2,7 @@ import linkedIn from '../../../public/Icons/linkedIn.svg';
 import discord from '../../../public/Icons/discord.svg';
 import github from '../../../public/Icons/github.svg';
 
-import style from '../../Styles/Home/aside.module.scss';
+import style from './aside.module.scss';
 
 export default function Aside() {
   return (

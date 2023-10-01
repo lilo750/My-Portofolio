@@ -28,7 +28,7 @@ $light-text: #dee2e6;
         font-weight: 500;
         transition: all 0.3s;
 
-        a {
+        * {
           display: inline-block;
           position: relative;
           color: $gray-text;
@@ -36,7 +36,7 @@ $light-text: #dee2e6;
           text-transform: capitalize;
         }
 
-        a::after {
+        *::after {
           content: '';
           position: absolute;
           background-color: $light-text;
@@ -47,7 +47,7 @@ $light-text: #dee2e6;
           transition: width 0.3s;
         }
 
-        a:hover::after {
+        *:hover::after {
           width: 100%;
         }
       }

@@ -1,11 +1,20 @@
-import style from '../../Styles/Home/home.module.scss';
+import style from './home.module.scss';
+import HeroSection from './HeroSection';
+import Aside from '../shared/Aside';
+import Footer from './Footer';
+import ParticlesTs from '../../Utilitez/Particles/ParticlesTs';
+import Header from '../shared/Header';
 
-interface propsInterface {
-  children: React.ReactNode;
-}
-
-function HomePage({ children }: propsInterface) {
-  return <div className={style.home}>{children}</div>;
+function HomePage() {
+  return (
+    <div className={style.home}>
+      <ParticlesTs />
+      <Header />
+      <HeroSection />
+      <Aside />
+      <Footer />
+    </div>
+  );
 }
 
 export default HomePage;

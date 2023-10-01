@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
+// import Typed from 'typed';
 import Typed from 'typed.js';
-import style from '../../Styles/Home/footer.module.scss';
+import style from '../../Components/home/footer.module.scss';
 
 function TypedComponent() {
   const el = useRef(null);

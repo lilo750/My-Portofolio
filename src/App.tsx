@@ -1,7 +1,7 @@
 import HomePage from './Components/Home/HomePage';
-import Header from './Components/Home/Header';
+import Header from './Components/shared/Header';
 import HeroSection from './Components/Home/HeroSection';
-import Aside from './Components/Home/Aside';
+import Aside from './Components/shared/Aside';
 import Footer from './Components/Home/Footer';
 import ParticlesTs from './Utilitez/Particles/ParticlesTs';
 
