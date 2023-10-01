@@ -1,11 +1,122 @@
 .skills {
-  position: relative;
+  .container {
+    min-height: 90dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    word-spacing: 1.4px;
+    line-height: 1.7;
+    padding-inline: 20px;
 
+    .textWrapper {
+      position: inherit;
+      color: #f0f8ff;
+      text-align: center;
+      // min-width: 750px;
+      margin: 0 auto;
+
+      h2 {
+        color: #fff;
+        font-size: 42px;
+        font-weight: 600;
+        padding-bottom: 12px;
+      }
+
+      p {
+        font-size: 18px;
+        padding-bottom: 9px;
+      }
+
+      .ctaDesc {
+        font-size: 18px;
+        padding-bottom: 17px;
+
+        a {
+          display: inline-block;
+          padding-inline-start: 5px;
+          color: #f4a949;
+          font-weight: 500;
+        }
+
+        a:link,
+        a:active {
+          text-decoration: none;
+          animation: all 0.2s;
+        }
+
+        a:hover,
+        a:visited {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .skillSet {
+      position: inherit;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 70px;
+      margin-block: 50px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3px;
+        width: 70px;
+        height: 70px;
+
+        span {
+          color: #f0f8ff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 749px) {
   .textWrapper {
-    position: inherit;
+    h2 {
+      font-size: 30px !important;
+    }
+    p {
+      font-size: 15px !important;
+      padding-bottom: 11px !important;
+    }
+
+    .ctaDesc {
+      font-size: 15px !important;
+    }
   }
 
   .skillSet {
-    position: inherit;
+    div {
+      width: 55px;
+      height: 55px;
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  .container {
+    .textWrapper {
+      width: 720px;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .textWrapper {
+    width: 950px !important;
+  }
+
+  .skillSet {
+    width: 900px !important;
   }
 }
